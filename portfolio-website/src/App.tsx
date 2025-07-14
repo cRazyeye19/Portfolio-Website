@@ -1,14 +1,16 @@
-import './App.css'
+import "./index.css";
+import Header from "./components/Header";
 
 function App() {
-
   return (
     <>
-      <div>
-        <h1 className='text-3xl font-bold underline'>hello world</h1>
+      <div className="bg-blue-50 min-h-screen text-gray-700">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Header />
+        </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
