@@ -5,12 +5,14 @@ import HeroSkeleton from "./components/HeroSkeleton";
 import AboutSkeleton from "./components/AboutSkeleton";
 import InfoSkeleton from "./components/InfoSkeleton";
 import PortfolioGridSkeleton from "./components/PortfolioGridSkeleton";
+import ExperienceSkeleton from "./components/ExperienceSkeleton";
 
 const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
 const About = lazy(() => import("./components/About"));
 const Info = lazy(() => import("./components/Info"));
 const PortfolioGrid = lazy(() => import("./components/PortfolioGrid"));
+const Experience = lazy(() => import("./components/Experience"));
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
           </Suspense>
           <Suspense fallback={<PortfolioGridSkeleton />}>
             <PortfolioGrid />
+          </Suspense>
+          <Suspense fallback={<ExperienceSkeleton />}>
+            <Experience />
           </Suspense>
         </div>
       </div>
