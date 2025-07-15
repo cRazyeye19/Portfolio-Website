@@ -4,7 +4,9 @@ import { heroContent } from "../data/heroData";
 const Hero = () => {
   const handleButtonClick = (buttonType?: string) => {
     if (buttonType === "calendly") {
-      window.Calendly.initPopupWidget({ url: 'https://calendly.com/jlesterpansoy' });
+      window.Calendly.initPopupWidget({
+        url: "https://calendly.com/jlesterpansoy",
+      });
     }
   };
 
@@ -44,6 +46,8 @@ const Hero = () => {
                   href={link.href}
                   title={link.title}
                   className="text-gray-600 hover:text-blue-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {link.icon}
                 </a>
