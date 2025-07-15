@@ -1,9 +1,13 @@
-import React from 'react'
+import Avatar from "../assets/engineer.png";
 
 const DesignerIllustration = () => {
   return (
-    <div>DesignerIllustration</div>
-  )
-}
+    <>
+      <div className="relative flex justify-center items-center my-8">
+        <img src={Avatar} alt="" className="w-auto h-64 object-contain" />
+      </div>
+    </>
+  );
+};
 
-export default DesignerIllustration
+export default DesignerIllustration;
