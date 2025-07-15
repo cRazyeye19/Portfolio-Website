@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-website-johnlester-pansoy.vercel.app/sitemap.xml
