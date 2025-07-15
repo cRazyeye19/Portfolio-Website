@@ -1,5 +1,13 @@
 import type { CardProps } from "../types/card";
-const Card = ({ tag, title, description, icon, bgColor, tagColor }: CardProps) => { 
+const Card = ({
+  tag,
+  title,
+  description,
+  icon,
+  bgColor,
+  tagColor,
+  previewLink,
+}: CardProps) => {
   return (
     <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between h-full">
       <div>
@@ -18,15 +26,19 @@ const Card = ({ tag, title, description, icon, bgColor, tagColor }: CardProps) =
       </div>
       <div className="flex justify-end items-center mt-6">
         <a
-          href="#"
+          href={previewLink}
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-sm mx-1 font-semibold text-gray-600 hover:text-gray-900"
         >
           Preview
         </a>
-        <a href="#">
+        <a href={previewLink} target="_blank" rel="noopener noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-gray-400 hover:text-gray-800"
+            className="text-gray-400 hover:text-gray-800"
+            width="22"
+            height="22"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

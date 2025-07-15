@@ -5,4 +5,5 @@ export interface CardProps {
   icon: string;
   bgColor: string;
   tagColor: string;
+  previewLink: string;
 }
