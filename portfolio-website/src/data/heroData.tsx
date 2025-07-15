@@ -2,7 +2,7 @@ export const heroContent = {
   headings: ["Hi, I'm Soy.", "I'm a Software Engineer & Web Developer."],
   buttons: [
     { text: "View my resume", href: "#" },
-    { text: "Let's have a coffee", href: "#" },
+    { text: "Let's have a coffee", type: "calendly" },
   ],
   socialLinks: [
     {
