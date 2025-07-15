@@ -16,10 +16,10 @@ const Card = ({ tag, title, description, icon, bgColor, tagColor }: CardProps) =
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-6">
+      <div className="flex justify-end items-center mt-6">
         <a
           href="#"
-          className="text-sm font-semibold text-gray-600 hover:text-gray-900"
+          className="text-sm mx-1 font-semibold text-gray-600 hover:text-gray-900"
         >
           Preview
         </a>
