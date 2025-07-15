@@ -1,6 +1,10 @@
 import { lazy, Suspense } from "react";
 import "./index.css";
-import SkeletonLoader from "./components/SkeletonLoader";
+import HeaderSkeleton from "./components/HeaderSkeleton";
+import HeroSkeleton from "./components/HeroSkeleton";
+import AboutSkeleton from "./components/AboutSkeleton";
+import InfoSkeleton from "./components/InfoSkeleton";
+import PortfolioGridSkeleton from "./components/PortfolioGridSkeleton";
 
 const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -13,19 +17,19 @@ function App() {
     <>
       <div className="bg-blue-50 min-h-screen text-gray-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Suspense fallback={<SkeletonLoader />}>
+          <Suspense fallback={<HeaderSkeleton />}>
             <Header />
           </Suspense>
-          <Suspense fallback={<SkeletonLoader />}>
+          <Suspense fallback={<HeroSkeleton />}>
             <Hero />
           </Suspense>
-          <Suspense fallback={<SkeletonLoader />}>
+          <Suspense fallback={<AboutSkeleton />}>
             <About />
           </Suspense>
-          <Suspense fallback={<SkeletonLoader />}>
+          <Suspense fallback={<InfoSkeleton />}>
             <Info />
           </Suspense>
-          <Suspense fallback={<SkeletonLoader />}>
+          <Suspense fallback={<PortfolioGridSkeleton />}>
             <PortfolioGrid />
           </Suspense>
         </div>
