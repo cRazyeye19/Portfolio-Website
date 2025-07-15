@@ -7,6 +7,7 @@ const Card = ({
   bgColor,
   tagColor,
   previewLink,
+  techStack,
 }: CardProps) => {
   return (
     <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between h-full">
@@ -23,6 +24,16 @@ const Card = ({
             <p className="text-sm text-gray-500 mt-1">{description}</p>
           </div>
         </div>
+      </div>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {techStack.map((tech, i) => (
+          <span
+            key={i}
+            className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs font-medium"
+          >
+            {tech}
+          </span>
+        ))}
       </div>
       <div className="flex justify-end items-center mt-6">
         <a

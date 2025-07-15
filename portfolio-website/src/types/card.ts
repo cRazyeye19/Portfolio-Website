@@ -6,4 +6,5 @@ export interface CardProps {
   bgColor: string;
   tagColor: string;
   previewLink: string;
+  techStack: string[];
 }
