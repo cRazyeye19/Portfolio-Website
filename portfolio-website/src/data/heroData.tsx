@@ -1,5 +1,5 @@
 export const heroContent = {
-  headings: ["Hi, I'm Soy.", "I'm a Software Engineer."],
+  headings: ["Hi, I'm Soy.", "I'm a Software Engineer & Web Developer."],
   buttons: [
     { text: "View my resume", href: "#" },
     { text: "Let's have a coffee", href: "#" },
@@ -51,5 +51,5 @@ export const heroContent = {
     },
   ],
   description:
-    "Simplifying complexity through clean, intuitive, and purposeful design.",
+    "Passionate Software Engineer and Web Developer specializing in building robust, scalable, and user-friendly applications.",
 };
