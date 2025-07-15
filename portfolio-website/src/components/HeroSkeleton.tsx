@@ -24,7 +24,7 @@ const HeroSkeleton: React.FC = () => {
             </div>
 
             {/* Right Column Skeleton */}
-            <div className="bg-gray-100/50 p-6 rounded-2xl shadow-sm h-24">
+            <div className="bg-gray-100/50">
                 <SkeletonBlock className="w-full h-4 mb-2" />
                 <SkeletonBlock className="w-3/4 h-4" />
             </div>
