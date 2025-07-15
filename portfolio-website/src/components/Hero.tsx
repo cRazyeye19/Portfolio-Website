@@ -30,6 +30,7 @@ const Hero = () => {
                 <a
                   key={index}
                   href={link.href}
+                  title={link.title}
                   className="text-gray-600 hover:text-blue-700"
                 >
                   {link.icon}
