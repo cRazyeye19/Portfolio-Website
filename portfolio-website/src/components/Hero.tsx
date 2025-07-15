@@ -1,14 +1,10 @@
-import { useState } from "react";
 import DesignerIllustration from "./DesignerIllustration";
 import { heroContent } from "../data/heroData";
-import CalendlyWidget from "./CalendlyWidget";
 
 const Hero = () => {
-  const [showCalendly, setShowCalendly] = useState(false);
-
   const handleButtonClick = (buttonType?: string) => {
     if (buttonType === "calendly") {
-      setShowCalendly(true);
+      window.Calendly.initPopupWidget({ url: 'https://calendly.com/jlesterpansoy' });
     }
   };
 
@@ -27,7 +23,12 @@ const Hero = () => {
             <a
               key={index}
               href={button.type === "calendly" ? "#" : button.href}
-              onClick={() => handleButtonClick(button.type)}
+              onClick={(e) => {
+                if (button.type === "calendly") {
+                  e.preventDefault();
+                }
+                handleButtonClick(button.type);
+              }}
               className="bg-white/50 p-4 rounded-full shadow-sm text-center font-semibold hover:shadow-md transition-all"
             >
               {button.text}
@@ -59,7 +60,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      {showCalendly && <CalendlyWidget url="https://calendly.com/jlesterpansoy" />}
     </main>
   );
 };
