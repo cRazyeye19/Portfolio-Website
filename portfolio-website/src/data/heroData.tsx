@@ -7,7 +7,7 @@ export const heroContent = {
   socialLinks: [
     {
       title: "GitHub",
-      href: "#",
+      href: "https://github.com/cRazyeye19",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,12 +40,52 @@ export const heroContent = {
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className="lucide lucide-mail-plus-icon lucide-mail-plus"
+          className="lucide lucide-mail-icon lucide-mail"
         >
-          <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-          <path d="M19 16v6" />
-          <path d="M16 19h6" />
+          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+        </svg>
+      ),
+    },
+    {
+      title: "Facebook",
+      href: "https://www.facebook.com/lester.go.940436",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="lucide lucide-facebook-icon lucide-facebook"
+        >
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        </svg>
+      ),
+    },
+    {
+      title: "LinkedIn",
+      href: "https://www.linkedin.com/in/john-lester-pansoy-890340207/",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="lucide lucide-linkedin-icon lucide-linkedin"
+        >
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect width="4" height="12" x="2" y="9" />
+          <circle cx="4" cy="4" r="2" />
         </svg>
       ),
     },
