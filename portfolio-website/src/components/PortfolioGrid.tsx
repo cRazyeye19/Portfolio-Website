@@ -14,6 +14,7 @@ const PortfolioGrid = () => {
             icon={item.icon}
             bgColor={item.bgColor}
             tagColor={item.tagColor}
+            previewLink={item.previewLink}
           />
         ))}
       </div>
