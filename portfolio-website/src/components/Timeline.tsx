@@ -8,7 +8,7 @@ const Timeline: React.FC = () => {
   }
 
   return (
-    <div className="relative wrap overflow-hidden lg:px-10 h-full">
+    <div className="relative wrap overflow-hidden md:px-9 lg:px-10 h-full">
       <div className="border absolute border-opacity-20 border-gray-700 h-full left-[10.2%] hidden md:block"></div>
       {experienceData.map((item, index) => (
         <TimelineItem key={item.id} item={item} index={index} />
