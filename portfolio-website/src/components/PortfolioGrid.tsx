@@ -3,7 +3,7 @@ import { portfolioItems } from "../data/portfolioData";
 
 const PortfolioGrid = () => {
   return (
-    <section className="max-w-6xl mx-auto py-10">
+    <section id="works" className="max-w-6xl mx-auto py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {portfolioItems.map((item, index) => (
           <Card

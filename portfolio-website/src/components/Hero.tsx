@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <main className="text-center py-10 md:py-16">
+    <main id="hero" className="text-center py-10 md:py-16">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
         {heroContent.headings[0]}
       </h1>

@@ -1,4 +1,4 @@
 export const navItems = [
-  { name: "Home", href: "#" },
-  { name: "Works", href: "#" }
+  { name: "Home", href: "#hero" },
+  { name: "Works", href: "#works" }
 ];
