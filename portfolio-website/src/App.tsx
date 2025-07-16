@@ -28,14 +28,14 @@ function App() {
           <Suspense fallback={<AboutSkeleton />}>
             <About />
           </Suspense>
+          <Suspense fallback={<ExperienceSkeleton />}>
+            <Experience />
+          </Suspense>
           <Suspense fallback={<InfoSkeleton />}>
             <Info />
           </Suspense>
           <Suspense fallback={<PortfolioGridSkeleton />}>
             <PortfolioGrid />
-          </Suspense>
-          <Suspense fallback={<ExperienceSkeleton />}>
-            <Experience />
           </Suspense>
         </div>
       </div>
